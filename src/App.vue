@@ -26,6 +26,28 @@ export default {
     padding: 0 45px;
     margin: 0 auto;
 
-   
+    .base-button {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      border-radius: 8px;
+      height: 44px;
+      width: 132px;
+      font-weight: 500;
+      font-size: 15px;
+
+      &_border {
+        color: #FB8F1D;
+        border: 1px solid #FB8F1D;
+        background: none;
+        margin-right: 18px;
+      }
+
+      &_orange {
+        color: #FFFFFF;
+        background: #FB8F1D;
+        border: none;
+      }
+    }
   }
 </style>
