@@ -22,10 +22,10 @@
         </a>
       </nav>
       <div class="header__active">
-        <button class="header__active-button base-button_border">
+        <button class="header__active-button base-button base-button_border">
           Login
         </button>
-        <button class="header__active-button base-button_orange">
+        <button class="header__active-button base-button base-button_orange">
           Register
         </button>
       </div>
@@ -51,6 +51,9 @@ export default {
     }
 
     &__nav {
+      display: flex;
+      align-items: center;
+
       &-link {
         margin-right: 35px;
         color: #B8BECD;
@@ -61,6 +64,10 @@ export default {
           font-weight: 500;
         }
       }
+    }
+
+    &__active {
+      display: flex;
     }
   }
 </style>
