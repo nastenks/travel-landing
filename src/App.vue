@@ -34,7 +34,6 @@ export default {
       justify-content: center;
       border-radius: 8px;
       height: 44px;
-      width: 132px;
       font-weight: 500;
       font-size: 15px;
 
