@@ -22,18 +22,6 @@ export default {
 </script>
 
 <style lang="scss">
-  // Mixins ----
-  @mixin inter {
-    font-family: 'Inter', sans-serif;
-  }
-  @mixin mulish {
-    font-family: 'Mulish', sans-serif;
-  }
-  @mixin playfair {
-    font-family: 'Playfair Display', sans-serif;
-  }
-  // Mixins stop ----
-
   #app {
     -webkit-font-smoothing: antialiased;
     -moz-osx-font-smoothing: grayscale;
