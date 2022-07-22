@@ -68,6 +68,10 @@ export default {
 
     &__active {
       display: flex;
+
+      &-button {
+        width: 132px;
+      }
     }
   }
 </style>
