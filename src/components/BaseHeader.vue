@@ -41,7 +41,6 @@ export default {
 
 <style lang="scss">
   .header {
-    @include inter;
     display: flex;
     justify-content: space-between;
     align-items: center;

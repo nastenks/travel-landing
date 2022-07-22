@@ -1,20 +1,22 @@
 <template>
   <div id="app">
     <BaseHeader />
-    <MainHolidayFinder />
-    <MainExploreWorld />
+    <MainBanner />
+    <MainPromo />
+    <MainGallery />
   </div>
 </template>
 
 <script>
 import BaseHeader from './components/BaseHeader.vue';
-import MainHolidayFinder from './components/MainHolidayFinder.vue';
-import MainExploreWorld from './components/MainExploreWorld.vue';
+import MainBanner from './components/MainBanner.vue';
+import MainPromo from './components/MainPromo.vue';
+import MainGallery from './components/MainGallery.vue';
 
 export default {
   name: 'App',
   components: {
-    BaseHeader, MainHolidayFinder, MainExploreWorld,
+    BaseHeader, MainBanner, MainPromo, MainGallery,
   },
 };
 </script>
@@ -49,6 +51,7 @@ export default {
       height: 44px;
       font-weight: 500;
       font-size: 15px;
+      font-family: 'Inter', sans-serif;
 
       &_border {
         color: #FB8F1D;
