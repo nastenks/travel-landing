@@ -108,7 +108,7 @@ export default ({
       }
 
       &-oval {
-        &_bottom {  
+        &_bottom {
           position: absolute;
           right: 600px;
           bottom: -100px;

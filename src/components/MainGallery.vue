@@ -8,15 +8,42 @@
         View all >
       </a>
     </div>
+    <ul class="main-gallery__list">
+      <li class="main-gallery__list-item" v-for="item in randomCountries" :key="item.id">
+        <figure>
+          <img :src="item.image" :alt="item.title">
+          <figcaption>
+            <b>
+              {{ item.title }}
+            </b>
+            <p>
+              {{ item.country }}
+            </p>
+          </figcaption>
+        </figure>
+      </li>
+    </ul>
   </section>
 </template>
 
 <script>
-import item-gallery from '../assets/item-gallery.js';
+import countries from '../data/countries';
 
 export default ({
   name: 'MainGallery',
-})
+  data() {
+    return {
+      countries,
+    };
+  },
+  computed: {
+    randomCountries() {
+      const randArray = countries.sort(() => 0.5 - Math.random());
+      let resArray = randArray.slice(0, 4);
+      return resArray;
+    },
+  },
+});
 </script>
 
 <style lang="scss">
@@ -42,6 +69,28 @@ export default ({
         font-size: 17px;
         color: #FB8F1D;
       }
+    }
+
+    &__list {
+      display: flex;
+      justify-content: space-between;
+
+      &-item {
+        list-style-type: none;
+        width: 260px;
+        height: 332px;
+        overflow: hidden;
+
+        img {
+          height: 332px;
+        }
+      }
+    }
+
+    ul,
+    figure {
+      padding: 0;
+      margin: 0;
     }
   }
 </style>
