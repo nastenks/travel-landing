@@ -1,25 +1,38 @@
 <template>
   <div id="app">
     <BaseHeader />
-    <MainBanner />
+    <MainHolidayFinder />
+    <MainExploreWorld />
   </div>
 </template>
 
 <script>
 import BaseHeader from './components/BaseHeader.vue';
-import MainBanner from './components/MainBanner.vue';
+import MainHolidayFinder from './components/MainHolidayFinder.vue';
+import MainExploreWorld from './components/MainExploreWorld.vue';
 
 export default {
   name: 'App',
   components: {
-    BaseHeader, MainBanner,
+    BaseHeader, MainHolidayFinder, MainExploreWorld,
   },
 };
 </script>
 
 <style lang="scss">
+  // Mixins ----
+  @mixin inter {
+    font-family: 'Inter', sans-serif;
+  }
+  @mixin mulish {
+    font-family: 'Mulish', sans-serif;
+  }
+  @mixin playfair {
+    font-family: 'Playfair Display', sans-serif;
+  }
+  // Mixins stop ----
+
   #app {
-    font-family: Inter, Helvetica, Arial, sans-serif;
     -webkit-font-smoothing: antialiased;
     -moz-osx-font-smoothing: grayscale;
     text-align: center;
