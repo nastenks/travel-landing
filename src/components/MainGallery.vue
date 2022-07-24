@@ -80,6 +80,7 @@ export default ({
         width: 260px;
         height: 332px;
         overflow: hidden;
+        border-radius: 6px;
 
         img {
           height: 332px;
