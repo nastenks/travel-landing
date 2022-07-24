@@ -4,6 +4,8 @@
     <MainBanner />
     <MainPromo />
     <MainGallery />
+    <MainGuide />
+    <MainTestimonials />
   </div>
 </template>
 
@@ -12,11 +14,13 @@ import BaseHeader from './components/BaseHeader.vue';
 import MainBanner from './components/MainBanner.vue';
 import MainPromo from './components/MainPromo.vue';
 import MainGallery from './components/MainGallery.vue';
+import MainGuide from './components/MainGuide.vue';
+import MainTestimonials from './components/MainTestimonials.vue';
 
 export default {
   name: 'App',
   components: {
-    BaseHeader, MainBanner, MainPromo, MainGallery,
+    BaseHeader, MainBanner, MainPromo, MainGallery, MainGuide, MainTestimonials
   },
 };
 </script>
